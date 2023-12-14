@@ -1,4 +1,4 @@
-# APRENDENDO KAFKA - Curso rocketset (YouTube)
+# APRENDENDO KAFKA - Curso rocketseat (YouTube)
 
 ### Micro-serviço com Node.js
 
