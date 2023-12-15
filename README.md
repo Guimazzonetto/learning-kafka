@@ -1,21 +1,22 @@
-# APRENDENDO KAFKA - Curso rocketseat (YouTube)
+# APRENDENDO KAFKA COM O ROCKETSEAT
 
-### Micro-serviço com Node.js
 
-- Utilziando Kafka;
-- Utilizando Node;
+## Micro-serviço com Node.js
 
-### Aplicações
+- Utilizando Kafka;
+- Utilizando Node.
 
-- API principal;
+## Aplicações
+
+- API principal (Station);
 - Geração de certificado;
 
-### Fluxo
+## Fluxo de aplicação
 
 - API principal envia uma mensagem para o serviço de certificado para gerar o certificado;
-- Micro-serviço de certificado devolve uma resposta (sícrona/assícrona);
+- Micro-serviço de certificado devolve uma resposta (síncrona/assíncrona);
 
-### O que sabemos?
+## O que sabemos?
 
 - REST (latência);
-- Redis / RabbitMQ / **Kafka**;
+- Redis / RabbitMQ / **kafka**;

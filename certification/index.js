@@ -1,2 +1,0 @@
-// Receber mensagens do Kafka
-

@@ -8,25 +8,28 @@ const app = express();
 /*
   Faz conexão com o Kafka
 */
+
 const kafka = new Kafka({
   clientId: "api",
-  brokers: ["localhost: 9092"], // Nome do serviço do Kafka no docker e porta
+  brokers: ["localhost:9092"],
 });
 
 const producer = kafka.producer();
 
 /*
-  Disponibiliza o producar para todas rotas
+  Diponibiliza o producer para todas as rotas
 */
+
 app.use((req, res, next) => {
   req.producer = producer;
 
-  return next;
+  return next();
 });
 
 /*
   Cadastra as rotas da aplicação
 */
+
 app.use(routes);
 
 async function run() {
