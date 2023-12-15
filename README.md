@@ -20,3 +20,27 @@
 
 - REST (latência);
 - Redis / RabbitMQ / **kafka**;
+
+
+
+# COMANDOS DOCKER
+
+## Listrnado os tópicos no DOCKER:
+
+- docker-compose ps
+
+## Executando kafka no docker (caso zookeeper alterar parâmetro):
+
+- docker exec -it learning_kafka-kafka-1 /bin/bash
+
+## Listando tópicos no Kafka:
+
+- kafka-topics.sh --list --zookeeper zookeeper:2181
+
+## Mandando mensagem producer:
+
+- kafka-console-producer.sh --broker-list localhost:9092 --topic issue-certificate
+
+## Recebendo mensagem consumer:
+
+- kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic issue-certificate
